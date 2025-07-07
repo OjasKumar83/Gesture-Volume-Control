@@ -108,8 +108,8 @@ python newMain.py
 
 Developed by **Ojas Kumar**  
 📫 Connect with me:  
-- [GitHub](https://github.com/)  
-- [LinkedIn](https://www.linkedin.com/)  
+- [GitHub](https://github.com/OjasKumar83)  
+- [LinkedIn](https://www.linkedin.com/in/ojas-kumar-10347a252/)  
 
 > Feel free to fork, improve, or open issues in the repo. Contributions are welcome!
 
