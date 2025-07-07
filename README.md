@@ -6,7 +6,7 @@ A computer vision-based project that allows you to control your **system volume 
 
 ## 📸 Demo
 
-![Demo](demo.gif) <!-- Add a GIF or screenshot of your app here -->
+https://github.com/user-attachments/assets/6d35bf0a-37c5-4509-8a2f-2c3d22223db5
 
 ---
 
