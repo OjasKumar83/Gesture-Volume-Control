@@ -1,17 +1,68 @@
-# Gesture-Volume-Control
-Gesture-Based Volume Control
+# 🎛️ Gesture-Based Volume Control using Python
 
-This project demonstrates the application of machine learning for gesture-based volume control using hand tracking and landmark detection. By leveraging libraries like MediaPipe, Pycaw, OpenCV, and NumPy, the system processes real-time webcam input to detect hand gestures and dynamically adjust system volume.
+A computer vision-based project that allows you to control your **system volume using hand gestures** — just by using your **webcam**. This project uses **OpenCV**, **MediaPipe**, and **PyCaw** to detect the distance between your **thumb and index finger**, and adjusts the system volume accordingly.
 
-Key Features
+---
 
-Hand Tracking with MediaPipe: Utilizes a pre-trained machine learning model to detect and track hand landmarks in real-time.
+## 📸 Demo
 
-Volume Control via Pycaw: Maps the distance between the thumb and index finger to system volume levels, providing a seamless and intuitive control experience.
+![Demo](demo.gif) <!-- Add a GIF or screenshot of your app here -->
 
-Real-Time Processing: Employs OpenCV for video feed capture and visualization of hand gestures.
+---
 
-Mathematical Mapping: Uses NumPy for efficient interpolation of hand gesture data into meaningful actions, such as volume adjustments.
+## 📌 Features
 
-This project showcases the practical integration of machine learning models with computer vision and system-level controls for innovative human-computer interaction.
+- 🖐️ Real-time hand tracking
+- 🔊 Volume controlled by distance between thumb and index finger
+- 🎨 On-screen visuals for feedback (volume bar, % level, finger tips)
+- ✅ Close app via ❌ button or press **`q`**
+- 🪶 Lightweight and easy to run
+
+---
+
+## 🧠 How It Works
+
+1. **OpenCV** captures real-time webcam frames.
+2. **MediaPipe** detects your hand and landmarks.
+3. Distance between **thumb tip (ID 4)** and **index finger tip (ID 8)** is calculated using `math.hypot()`.
+4. **NumPy** interpolates this distance into a volume percentage (0–100%).
+5. **PyCaw** sets the actual system volume using Windows audio APIs.
+6. Visual feedback is displayed in the OpenCV window.
+
+---
+
+## ⚙️ Prerequisites
+
+Make sure you are using **Python 3.6 or higher** and are on **Windows OS**.
+
+Install dependencies using:
+
+```bash
+pip install opencv-python mediapipe numpy pycaw comtypes
+```
+> ✅ **Note**: This project works **only on Windows** due to the use of the `pycaw` library,
+> which depends on the Windows Core Audio APIs.
+
+---
+
+## ▶️ How to Run
+
+1. Clone this repo or download the `gesture_volume_control.py` file.
+2. Run the script using:
+
+```bash
+python newMain.py
+```
+
+3. Show your hand in front of the webcam.
+
+4. Move thumb and index finger:
+
+  👉 Closer: Decrease volume
+
+  👉 Farther: Increase volume
+
+5. Exit by pressing q or clicking the ❌ window close button.
+
+
 
