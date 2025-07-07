@@ -64,5 +64,57 @@ python newMain.py
 
 5. Exit by pressing q or clicking the ❌ window close button.
 
+## 🗂️ File Structure
+
+    gesture_volume_control/
+    ├── newMain.py                  # Main application
+    ├── demo.gif                    # (Optional) Visual demo
+    └── README.md                   # You're reading it now
+    
+## 🧰 Libraries Used
+
+| Library         | Use Case                                |
+| --------------- | --------------------------------------- |
+| `opencv-python` | Webcam input, drawing, display UI       |
+| `mediapipe`     | Hand landmark detection                 |
+| `math`          | Calculating distance between fingers    |
+| `numpy`         | Interpolating finger distance to volume |
+| `pycaw`         | Changing system volume on Windows       |
+| `comtypes`      | Required for `pycaw` COM interface      |
+
+---
+
+## 📚 References
+
+- 📘 [MediaPipe Hands Documentation](https://google.github.io/mediapipe/solutions/hands)
+- 📘 [PyCaw GitHub Repository](https://github.com/AndreMiras/pycaw)
+- 📘 [OpenCV Python Documentation](https://docs.opencv.org/master/)
+- 📘 [NumPy Documentation](https://numpy.org/doc/)
+- 📘 [comtypes Library on PyPI](https://pypi.org/project/comtypes/)
+- 📘 [math.hypot() — Python Docs](https://docs.python.org/3/library/math.html#math.hypot)
+
+---
+
+## 🚀 Future Improvements
+
+- 🤖 Add support for multi-gesture recognition (e.g., mute, skip, pause)
+- 💻 Cross-platform compatibility (support for macOS and Linux using alternative audio libraries)
+- 🎨 Enhanced user interface with animated feedback or sound alerts
+- 📷 Add calibration step to improve accuracy across hand sizes and lighting conditions
+
+---
+
+## 🙋‍♂️ Author
+
+Developed by **Ojas Kumar**  
+📫 Connect with me:  
+- [GitHub](https://github.com/)  
+- [LinkedIn](https://www.linkedin.com/)  
+
+> Feel free to fork, improve, or open issues in the repo. Contributions are welcome!
+
+
+    
+
 
 
